@@ -1,11 +1,13 @@
 <template>
-  <header class="bg-white">
+  <header class="bg-blue-200">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
+        <router-link to="/">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
           <img class="h-12 w-auto" src="/icon.svg" alt="" />
         </a>
+        </router-link>
       </div>
       <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = true">
@@ -15,7 +17,7 @@
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
         <Popover class="relative">
-          <PopoverButton class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
+          <PopoverButton class="flex items-center gap-x-1 navTitle">
             Product
             <ChevronDownIcon class="size-5 flex-none text-gray-400" aria-hidden="true" />
           </PopoverButton>
@@ -45,9 +47,8 @@
             </PopoverPanel>
           </transition>
         </Popover>
-
-        <a href="#" class="text-sm/6 font-semibold text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition-colors duration-300">About</a>        
-        <a href="#" class="text-sm/6 font-semibold text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition-colors duration-300">Contact</a>
+        <router-link to="about" class="navTitle">About</router-link>      
+        <router-link to="contact" class="navTitle">Contact</router-link>   
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
@@ -78,9 +79,8 @@
                   <DisclosureButton v-for="item in [...products, ...callsToAction]" :key="item.name" as="a" :href="item.href" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">{{ item.name }}</DisclosureButton>
                 </DisclosurePanel>
               </Disclosure>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+              <router-link to="about" class="navTitle2">About</router-link>
+              <router-link to="contact" class="navTitl2">Contact</router-link>
             </div>
             <div class="py-6">
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>

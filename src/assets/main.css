@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 自訂元件 */
+/* @apply 樣式 精簡class 可以重複使用 保持template 簡潔 */
+.navTitle {
+    @apply text-sm/6 font-semibold text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition-colors duration-300
+}
+
+.navTitle2 {
+    @apply -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50
+}
+
+.screenHeight {
+    @apply flex flex-col items-center justify-center min-h-[calc(100vh-170px)]
+}
+
+/* RWD md:, hover test */
+.card {
+    @apply p-6 max-w-sm mx-auto
+        bg-white rounded-xl shadow-lg flex items-center gap-x-4
+        hover:bg-red-200
+        cursor-pointer
+}

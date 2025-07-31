@@ -1,3 +1,3 @@
 <template>
-    <p class="text-center">© 2025 Copyright Ivy Raine</p>    
+    <p class="bg-gray-100 text-center">© 2025 Copyright Ivy Raine</p>    
 </template>
