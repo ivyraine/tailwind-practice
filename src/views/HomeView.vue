@@ -28,17 +28,18 @@
   </div>
 </template>
 
-<!-- <script setup>
-import { ref } from 'vue'
+<!-- 
+  relative 是 position: relative
+  isolate 是isolation: isolate 的縮寫
+    用於：
+      創建新的堆疊上下文（stacking context）
+      防止子元素的混合模式（blend modes）影響到祖先元素
+      隔離 z-index 的作用範圍
+  ring 環形邊框
+    特點：
+      不影響佈局（不像 border 會增加元素尺寸）
+      常用於焦點狀態、選中狀態
+      緊貼元素邊緣
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
-const mobileMenuOpen = ref(false)
-</script>
- -->
-
+-->

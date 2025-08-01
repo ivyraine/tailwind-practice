@@ -15,9 +15,31 @@
       <p class="text-slate-500">You have a new message!</p>
     </div>
   </div>
+  
+  
+  <!-- 基本環形邊框 -->
+  <div class="ring-2 ring-blue-500 m-2 px-2">內容</div>
+  <!-- 等同於：box-shadow: 0 0 0 2px rgb(59 130 246); -->
+  
+  <!-- 焦點環形邊框 -->
+  <button class="focus:ring-2 focus:ring-blue-500 m-2 px-2">按鈕點擊focus</button>
+  
+  <!-- 環形邊框變化 -->
+  <div class="ring-4 ring-red-500 ring-opacity-50  m-2 px-3">半透明紅色環形邊框</div>
+  
+  
+  <!-- 基本陰影 -->
+  <div class="shadow-md">內容</div>
+  <!-- 等同於：box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); -->
+  
+  <!-- 不同陰影大小 -->
+  <div class="shadow-sm">小陰影</div>
+  <div class="shadow-lg">大陰影</div>
+  <div class="shadow-2xl">超大陰影</div>
+  
+  <!-- 自定義陰影 -->
+  <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">自定義陰影</div>
+
 </div>
 
 </template>
-
-<style>
-</style>

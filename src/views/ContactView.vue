@@ -17,9 +17,10 @@
     </div>
   </div>
 
-
+<!-- 
+  rounded-XXX 是border-radius
+  tracking-XXX 是 letter-spacing
+  leading-XXX 是 line-height
+-->
 
 </template>
-
-<style>
-</style>
